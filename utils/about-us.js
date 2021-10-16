@@ -6,6 +6,7 @@ const aboutUsPageIntroTextp2 = document.createElement("p");
 const aboutUsPageIntroTextp3 = document.createElement("p");
 
 const aboutUsLocationsContainer = document.createElement("div");
+const addressContainer = document.createElement("div");
 const aboutUsLocationsHeadingContainer = document.createElement("div");
 const aboutUsLocationsH1 = document.createElement("h1");
 
@@ -48,17 +49,20 @@ aboutUsPageIntroTextp3.textContent =
   "Nando's UK opens its 40th restaurant. We realise we're on a bit of a roll now.";
 
 aboutUsPageTextContainer.classList.add("divElements");
+aboutUsPageTextContainer.id = "aboutUsPageTextContainer";
 aboutUsPageTextContainer.append(aboutUsPageTextH1);
 aboutUsPageTextContainer.append(aboutUsPageIntroTextp1);
 aboutUsPageTextContainer.append(aboutUsPageIntroTextp2);
 aboutUsPageTextContainer.append(aboutUsPageIntroTextp3);
 
 aboutUsLocationsH1.textContent = "Locations";
+aboutUsLocationsHeadingContainer.id = "aboutUsLocationsHeadingContainer";
 aboutUsLocationsHeadingContainer.append(aboutUsLocationsH1);
 
 aboutUsAddress1Line1.textContent = "Brewer St - Soho";
 aboutUsAddress1Line2.textContent = "84 Brewer St";
 aboutUsAddress1Line3.textContent = "London W1F 9UB";
+aboutUsAddress1Days.classList.add("addressDays");
 aboutUsAddress1Days.textContent = "Monday - Sunday";
 aboutUsAddress1Times.textContent = "11am - 1am";
 aboutUsLocationImage1.src = "../src/img/sohoChefsKiss.jpg";
@@ -67,6 +71,7 @@ aboutUsLocationImage1.style.width = "314px";
 aboutUsAddress2Line1.textContent = "Paddington";
 aboutUsAddress2Line2.textContent = "31 Paddington St";
 aboutUsAddress2Line3.textContent = "London W1U 4HD";
+aboutUsAddress2Days.classList.add("addressDays");
 aboutUsAddress2Days.textContent = "Monday - Saturday";
 aboutUsAddress2Times.textContent = "10am - 11pm";
 aboutUsLocationImage2.src = "../src/img/paddingtonChefsKiss.jpg";
@@ -75,6 +80,7 @@ aboutUsLocationImage2.style.width = "314px";
 aboutUsAddress3Line1.textContent = "Chiswick";
 aboutUsAddress3Line2.textContent = "148 Chiswick High Rd";
 aboutUsAddress3Line3.textContent = "London W4 1PR";
+aboutUsAddress3Days.classList.add("addressDays");
 aboutUsAddress3Days.textContent = "Monday - Sunday";
 aboutUsAddress3Times.textContent = "12pm - 1am";
 aboutUsLocationImage3.src = "../src/img/camdenChefsKiss.jpg";
@@ -84,18 +90,21 @@ aboutUsLocationImage1Container.append(aboutUsLocationImage1);
 aboutUsLocationImage2Container.append(aboutUsLocationImage2);
 aboutUsLocationImage3Container.append(aboutUsLocationImage3);
 
+aboutUsAddress1Container.id = "aboutUsAddress1Container";
 aboutUsAddress1Container.append(aboutUsAddress1Line1);
 aboutUsAddress1Container.append(aboutUsAddress1Line2);
 aboutUsAddress1Container.append(aboutUsAddress1Line3);
 aboutUsAddress1Container.append(aboutUsAddress1Days);
 aboutUsAddress1Container.append(aboutUsAddress1Times);
 
+aboutUsAddress2Container.id = "aboutUsAddress2Container";
 aboutUsAddress2Container.append(aboutUsAddress2Line1);
 aboutUsAddress2Container.append(aboutUsAddress2Line2);
 aboutUsAddress2Container.append(aboutUsAddress2Line3);
 aboutUsAddress2Container.append(aboutUsAddress2Days);
 aboutUsAddress2Container.append(aboutUsAddress2Times);
 
+aboutUsAddress3Container.id = "aboutUsAddress3Container";
 aboutUsAddress3Container.append(aboutUsAddress3Line1);
 aboutUsAddress3Container.append(aboutUsAddress3Line2);
 aboutUsAddress3Container.append(aboutUsAddress3Line3);
@@ -112,11 +121,15 @@ aboutUsLocationAndImageContainer3.append(aboutUsAddress3Container);
 aboutUsLocationAndImageContainer3.append(aboutUsLocationImage3Container);
 
 aboutUsLocationsContainer.classList.add("divElements");
-aboutUsLocationsContainer.append(aboutUsLocationAndImageContainer1);
-aboutUsLocationsContainer.append(aboutUsLocationAndImageContainer2);
-aboutUsLocationsContainer.append(aboutUsLocationAndImageContainer3);
+aboutUsLocationsContainer.id = "aboutUsLocationsContainer";
+aboutUsLocationsContainer.append(aboutUsLocationsHeadingContainer);
+addressContainer.id = "addressContainer";
+addressContainer.append(aboutUsLocationAndImageContainer1);
+addressContainer.append(aboutUsLocationAndImageContainer2);
+addressContainer.append(aboutUsLocationAndImageContainer3);
+aboutUsLocationsContainer.append(addressContainer);
 
-function aboutUsTabSwitch() {
+function aboutUsTabSwitch(e) {
   var divElements = document.querySelectorAll(".divElements");
   for (var i = 0; i < divElements.length; i++) {
     divElements[i].parentNode.removeChild(divElements[i]);
@@ -124,6 +137,7 @@ function aboutUsTabSwitch() {
   currentPageImg.src = "../src/img/max-delsid-0geTqSZ76Xg-unsplash.jpg";
   contentDiv.append(aboutUsPageTextContainer);
   contentDiv.append(aboutUsLocationsContainer);
+  e.preventDefault();
 }
 
 export { aboutUsTabSwitch };

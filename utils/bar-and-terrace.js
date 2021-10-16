@@ -21,32 +21,32 @@ const barAndTerraceWineListTabTitle = document.createElement("a");
 const barAndTerraceDrinksListTabTitle = document.createElement("a");
 
 // drinks containers and p tags
-const barAndTerraceDrinksListContainer0 = document.createElement("div");
-const barAndTerraceDrinksListContainer1 = document.createElement("div");
-const barAndTerraceDrinksListContainer2 = document.createElement("div");
-const barAndTerraceDrinksListContainer3 = document.createElement("div");
-const barAndTerraceDrinksListContainer4 = document.createElement("div");
-const barAndTerraceDrinksListContainer5 = document.createElement("div");
-const barAndTerraceDrinksListContainer6 = document.createElement("div");
-const barAndTerraceDrinksListContainer7 = document.createElement("div");
-const barAndTerraceDrinksListContainer8 = document.createElement("div");
-const barAndTerraceDrinksListContainer0p1 = document.createElement("p");
-const barAndTerraceDrinksListContainer1p1 = document.createElement("p");
-const barAndTerraceDrinksListContainer1p2 = document.createElement("p");
-const barAndTerraceDrinksListContainer2p1 = document.createElement("p");
-const barAndTerraceDrinksListContainer2p2 = document.createElement("p");
-const barAndTerraceDrinksListContainer3p1 = document.createElement("p");
-const barAndTerraceDrinksListContainer3p2 = document.createElement("p");
-const barAndTerraceDrinksListContainer4p1 = document.createElement("p");
-const barAndTerraceDrinksListContainer4p2 = document.createElement("p");
-const barAndTerraceDrinksListContainer5p1 = document.createElement("p");
-const barAndTerraceDrinksListContainer5p2 = document.createElement("p");
-const barAndTerraceDrinksListContainer6p1 = document.createElement("p");
-const barAndTerraceDrinksListContainer6p2 = document.createElement("p");
-const barAndTerraceDrinksListContainer7p1 = document.createElement("p");
-const barAndTerraceDrinksListContainer7p2 = document.createElement("p");
-const barAndTerraceDrinksListContainer8p1 = document.createElement("p");
-const barAndTerraceDrinksListContainer8p2 = document.createElement("p");
+const drinksListContainer0 = document.createElement("div");
+const drinksListContainer1 = document.createElement("div");
+const drinksListContainer2 = document.createElement("div");
+const drinksListContainer3 = document.createElement("div");
+const drinksListContainer4 = document.createElement("div");
+const drinksListContainer5 = document.createElement("div");
+const drinksListContainer6 = document.createElement("div");
+const drinksListContainer7 = document.createElement("div");
+const drinksListContainer8 = document.createElement("div");
+const drinksListContainer0p1 = document.createElement("p");
+const drinksListContainer1p1 = document.createElement("p");
+const drinksListContainer1p2 = document.createElement("p");
+const drinksListContainer2p1 = document.createElement("p");
+const drinksListContainer2p2 = document.createElement("p");
+const drinksListContainer3p1 = document.createElement("p");
+const drinksListContainer3p2 = document.createElement("p");
+const drinksListContainer4p1 = document.createElement("p");
+const drinksListContainer4p2 = document.createElement("p");
+const drinksListContainer5p1 = document.createElement("p");
+const drinksListContainer5p2 = document.createElement("p");
+const drinksListContainer6p1 = document.createElement("p");
+const drinksListContainer6p2 = document.createElement("p");
+const drinksListContainer7p1 = document.createElement("p");
+const drinksListContainer7p2 = document.createElement("p");
+const drinksListContainer8p1 = document.createElement("p");
+const drinksListContainer8p2 = document.createElement("p");
 
 // wine containers and p tags
 const wineListContainer0 = document.createElement("div");
@@ -96,69 +96,71 @@ barAndTerraceWineListTabTitle.textContent = "Wine List";
 barAndTerraceDrinksListTabTitle.textContent = "Drinks List";
 barAndTerraceWineListTabTitle.href = "#";
 barAndTerraceDrinksListTabTitle.href = "#";
+barAndTerraceWineAndDrinksTabContainer.id =
+  "barAndTerraceWineAndDrinksTabContainer";
 barAndTerraceWineAndDrinksTabContainer.append(barAndTerraceWineListTabTitle);
 barAndTerraceWineAndDrinksTabContainer.append(barAndTerraceDrinksListTabTitle);
 
 function drinksList() {
-  barAndTerraceDrinksListContainer0p1.textContent = "Drink List";
-  barAndTerraceDrinksListContainer0.append(barAndTerraceDrinksListContainer0p1);
+  drinksListContainer0p1.textContent = "Drink List";
+  drinksListContainer0.append(drinksListContainer0p1);
 
-  barAndTerraceDrinksListContainer1p1.textContent = "Signature Cocktails";
-  barAndTerraceDrinksListContainer1p2.textContent = "£12";
-  barAndTerraceDrinksListContainer1.append(barAndTerraceDrinksListContainer1p1);
-  barAndTerraceDrinksListContainer1.append(barAndTerraceDrinksListContainer1p2);
+  drinksListContainer1p1.textContent = "Signature Cocktails";
+  drinksListContainer1p2.textContent = "£12";
+  drinksListContainer1.append(drinksListContainer1p1);
+  drinksListContainer1.append(drinksListContainer1p2);
 
-  barAndTerraceDrinksListContainer2p1.textContent = "Tonico";
-  barAndTerraceDrinksListContainer2p2.textContent =
+  drinksListContainer2p1.textContent = "Tonico";
+  drinksListContainer2p2.textContent =
     "Star of Bombay gin, grapefruit, Campari & chilli";
-  barAndTerraceDrinksListContainer2.append(barAndTerraceDrinksListContainer2p1);
-  barAndTerraceDrinksListContainer2.append(barAndTerraceDrinksListContainer2p2);
+  drinksListContainer2.append(drinksListContainer2p1);
+  drinksListContainer2.append(drinksListContainer2p2);
 
-  barAndTerraceDrinksListContainer3p1.textContent = "Wrong Blanco";
-  barAndTerraceDrinksListContainer3p2.textContent =
+  drinksListContainer3p1.textContent = "Wrong Blanco";
+  drinksListContainer3p2.textContent =
     "Allegra’s dry vermouth blend, Luxardo Bianco, Pet Nat prosecco & bitters";
-  barAndTerraceDrinksListContainer3.append(barAndTerraceDrinksListContainer3p1);
-  barAndTerraceDrinksListContainer3.append(barAndTerraceDrinksListContainer3p2);
+  drinksListContainer3.append(drinksListContainer3p1);
+  drinksListContainer3.append(drinksListContainer3p2);
 
-  barAndTerraceDrinksListContainer4p1.textContent = "Wild Side";
-  barAndTerraceDrinksListContainer4p2.textContent =
+  drinksListContainer4p1.textContent = "Wild Side";
+  drinksListContainer4p2.textContent =
     "Pear cider, Noilly Prat, Calvados, elderflower & bitters";
-  barAndTerraceDrinksListContainer4.append(barAndTerraceDrinksListContainer4p1);
-  barAndTerraceDrinksListContainer4.append(barAndTerraceDrinksListContainer4p2);
+  drinksListContainer4.append(drinksListContainer4p1);
+  drinksListContainer4.append(drinksListContainer4p2);
 
-  barAndTerraceDrinksListContainer5p1.textContent = "East Side";
-  barAndTerraceDrinksListContainer5p2.textContent =
+  drinksListContainer5p1.textContent = "East Side";
+  drinksListContainer5p2.textContent =
     "Altos tequila, cucumber, lemon balm, honey & lime";
-  barAndTerraceDrinksListContainer5.append(barAndTerraceDrinksListContainer5p1);
-  barAndTerraceDrinksListContainer5.append(barAndTerraceDrinksListContainer5p2);
+  drinksListContainer5.append(drinksListContainer5p1);
+  drinksListContainer5.append(drinksListContainer5p2);
 
-  barAndTerraceDrinksListContainer6p1.textContent = "Three Teas";
-  barAndTerraceDrinksListContainer6p2.textContent =
+  drinksListContainer6p1.textContent = "Three Teas";
+  drinksListContainer6p2.textContent =
     "Bacardi 8 rum, three black teas, orgeat, lime & peach";
-  barAndTerraceDrinksListContainer6.append(barAndTerraceDrinksListContainer6p1);
-  barAndTerraceDrinksListContainer6.append(barAndTerraceDrinksListContainer6p2);
+  drinksListContainer6.append(drinksListContainer6p1);
+  drinksListContainer6.append(drinksListContainer6p2);
 
-  barAndTerraceDrinksListContainer7p1.textContent = "The 7th Garden";
-  barAndTerraceDrinksListContainer7p2.textContent =
+  drinksListContainer7p1.textContent = "The 7th Garden";
+  drinksListContainer7p2.textContent =
     "Grey Goose vodka, pickled ginger, chamomile, prosecco & lemon";
-  barAndTerraceDrinksListContainer7.append(barAndTerraceDrinksListContainer7p1);
-  barAndTerraceDrinksListContainer7.append(barAndTerraceDrinksListContainer7p2);
+  drinksListContainer7.append(drinksListContainer7p1);
+  drinksListContainer7.append(drinksListContainer7p2);
 
-  barAndTerraceDrinksListContainer8p1.textContent = "The Orchardist";
-  barAndTerraceDrinksListContainer8p2.textContent =
+  drinksListContainer8p1.textContent = "The Orchardist";
+  drinksListContainer8p2.textContent =
     "Lot 40 rye whisky, red flesh apple, Tio Pepe sherry & Fernet Branca";
-  barAndTerraceDrinksListContainer8.append(barAndTerraceDrinksListContainer8p1);
-  barAndTerraceDrinksListContainer8.append(barAndTerraceDrinksListContainer8p2);
+  drinksListContainer8.append(drinksListContainer8p1);
+  drinksListContainer8.append(drinksListContainer8p2);
 
-  barAndTerraceWineAndDrinksContainer.append(barAndTerraceDrinksListContainer0);
-  barAndTerraceWineAndDrinksContainer.append(barAndTerraceDrinksListContainer1);
-  barAndTerraceWineAndDrinksContainer.append(barAndTerraceDrinksListContainer2);
-  barAndTerraceWineAndDrinksContainer.append(barAndTerraceDrinksListContainer3);
-  barAndTerraceWineAndDrinksContainer.append(barAndTerraceDrinksListContainer4);
-  barAndTerraceWineAndDrinksContainer.append(barAndTerraceDrinksListContainer5);
-  barAndTerraceWineAndDrinksContainer.append(barAndTerraceDrinksListContainer6);
-  barAndTerraceWineAndDrinksContainer.append(barAndTerraceDrinksListContainer7);
-  barAndTerraceWineAndDrinksContainer.append(barAndTerraceDrinksListContainer8);
+  barAndTerraceWineAndDrinksContainer.append(drinksListContainer0);
+  barAndTerraceWineAndDrinksContainer.append(drinksListContainer1);
+  barAndTerraceWineAndDrinksContainer.append(drinksListContainer2);
+  barAndTerraceWineAndDrinksContainer.append(drinksListContainer3);
+  barAndTerraceWineAndDrinksContainer.append(drinksListContainer4);
+  barAndTerraceWineAndDrinksContainer.append(drinksListContainer5);
+  barAndTerraceWineAndDrinksContainer.append(drinksListContainer6);
+  barAndTerraceWineAndDrinksContainer.append(drinksListContainer7);
+  barAndTerraceWineAndDrinksContainer.append(drinksListContainer8);
 }
 
 function wineList() {
@@ -166,6 +168,8 @@ function wineList() {
   wineListContainer0.append(wineListContainer0p1);
 
   wineListContainer1p1.textContent = "By the glass";
+  wineListContainer1p1.classList.add("wineAndDrinksContainer1p1");
+
   wineListContainer1.append(wineListContainer1p1);
 
   wineListContainer2p1.textContent = "Sparkling & Champagne";
@@ -244,6 +248,7 @@ function wineList() {
 }
 
 barAndTerracePageTextContainer.classList.add("divElements");
+barAndTerracePageTextContainer.id = "barAndTerracePageTextContainer";
 barAndTerracePageTextContainer.append(barAndTerracePageTextH1);
 barAndTerracePageTextContainer.append(barAndTerracePageIntroTextp1);
 barAndTerracePageTextContainer.append(barAndTerracePageIntroTextp2);
@@ -251,21 +256,25 @@ barAndTerracePageTextContainer.append(barAndTerracePageIntroTextp3);
 barAndTerracePageTextContainer.append(barAndTerracePageIntroTextp4);
 
 barAndTerraceWineAndDrinksContainer.classList.add("divElements");
+barAndTerraceWineAndDrinksContainer.id = "barAndTerraceWineAndDrinksContainer";
 barAndTerraceWineAndDrinksContainer.append(
   barAndTerraceWineAndDrinksTabContainer
 );
 
-barAndTerraceDrinksListContainer0.classList.add("drinksItems");
-barAndTerraceDrinksListContainer1.classList.add("drinksItems");
-barAndTerraceDrinksListContainer2.classList.add("drinksItems");
-barAndTerraceDrinksListContainer3.classList.add("drinksItems");
-barAndTerraceDrinksListContainer4.classList.add("drinksItems");
-barAndTerraceDrinksListContainer5.classList.add("drinksItems");
-barAndTerraceDrinksListContainer6.classList.add("drinksItems");
-barAndTerraceDrinksListContainer7.classList.add("drinksItems");
-barAndTerraceDrinksListContainer8.classList.add("drinksItems");
+drinksListContainer0.classList.add("drinksItems");
+drinksListContainer0.id = "drinksListContainer0";
+drinksListContainer1.classList.add("drinksItems");
+drinksListContainer1.id = "drinksListContainer1";
+drinksListContainer2.classList.add("drinksItems");
+drinksListContainer3.classList.add("drinksItems");
+drinksListContainer4.classList.add("drinksItems");
+drinksListContainer5.classList.add("drinksItems");
+drinksListContainer6.classList.add("drinksItems");
+drinksListContainer7.classList.add("drinksItems");
+drinksListContainer8.classList.add("drinksItems");
 
 wineListContainer0.classList.add("wineItems");
+wineListContainer0.id = "wineListContainer0";
 wineListContainer1.classList.add("wineItems");
 wineListContainer2.classList.add("wineItems");
 wineListContainer3.classList.add("wineItems");
@@ -275,7 +284,8 @@ wineListContainer6.classList.add("wineItems");
 
 wineList();
 
-function showWineSelection() {
+function showWineSelection(e) {
+  e.preventDefault();
   var drinksItems = document.querySelectorAll(".drinksItems");
   for (let i = 0; i < drinksItems.length; i++) {
     drinksItems[i].parentNode.removeChild(drinksItems[i]);
@@ -283,7 +293,8 @@ function showWineSelection() {
   wineList();
 }
 
-function showDrinksSelection() {
+function showDrinksSelection(e) {
+  e.preventDefault();
   var wineItems = document.querySelectorAll(".wineItems");
   for (let i = 0; i < wineItems.length; i++) {
     wineItems[i].parentNode.removeChild(wineItems[i]);
@@ -294,7 +305,7 @@ function showDrinksSelection() {
 barAndTerraceWineListTabTitle.addEventListener("click", showWineSelection);
 barAndTerraceDrinksListTabTitle.addEventListener("click", showDrinksSelection);
 
-function barAndTerraceTabSwitch() {
+function barAndTerraceTabSwitch(e) {
   var divElements = document.querySelectorAll(".divElements");
   for (var i = 0; i < divElements.length; i++) {
     divElements[i].parentNode.removeChild(divElements[i]);
@@ -302,6 +313,7 @@ function barAndTerraceTabSwitch() {
   currentPageImg.src = "../src/img/matthieu-joannon-6ciLddToTgM-unsplash.jpg";
   contentDiv.append(barAndTerracePageTextContainer);
   contentDiv.append(barAndTerraceWineAndDrinksContainer);
+  e.preventDefault();
 }
 
 export { barAndTerraceTabSwitch };

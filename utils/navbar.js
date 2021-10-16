@@ -33,9 +33,11 @@ function createNavbar() {
 
   logoImg.src = "../src/img/Savory Magazine.png";
   logoImg.style.width = "100px";
+  logoImg.id = "logoImg";
   logoImgContainer.append(logoImg);
   logoImgContainer.addEventListener("click", homePageTabSwitch);
 
+  navbar.id = "navbar";
   navbar.append(logoImgContainer);
   navbar.append(ul1);
   ul1.append(li1);

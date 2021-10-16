@@ -22,15 +22,17 @@ homePageTextp2.textContent =
 homePageTextp3.textContent =
   "Designed by Space Copenhagen (the team behind Noma) Chef’s Kiss’s interiors fuse cutting-edge style with cosy, old-world opulence which flows onto the Allegra terrace.";
 
+homePageImgContainer.id = "homePageImgContainer";
 homePageImgContainer.append(currentPageImg);
 
 homePageTextContainer.classList.add("divElements");
+homePageTextContainer.id = "homePageTextContainer";
 homePageTextContainer.append(homePageTextH1);
 homePageTextContainer.append(homePageTextp1);
 homePageTextContainer.append(homePageTextp2);
 homePageTextContainer.append(homePageTextp3);
 
-function homePageTabSwitch() {
+function homePageTabSwitch(e) {
   var divElements = document.querySelectorAll(".divElements");
   for (var i = 0; i < divElements.length; i++) {
     divElements[i].parentNode.removeChild(divElements[i]);
@@ -38,6 +40,7 @@ function homePageTabSwitch() {
   currentPageImg.src = "../src/img/alex-haney-CAhjZmVk5H4-unsplash.jpg";
   contentDiv.append(homePageImgContainer);
   contentDiv.append(homePageTextContainer);
+  e.preventDefault();
 }
 
 export { homePageTabSwitch };

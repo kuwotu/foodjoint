@@ -53,6 +53,7 @@ menuPageSidesTextp3.textContent =
 menuPageSidesTextp4.textContent = "Salt and peppered deep cut fries   £8";
 
 menuPageTextContainer.classList.add("divElements");
+menuPageTextContainer.id = "menuPageTextContainer";
 menuPageTextContainer.append(menuPageStartersTextH1);
 menuPageTextContainer.append(menuPageStartersTextp1);
 menuPageTextContainer.append(menuPageStartersTextp2);
@@ -71,7 +72,7 @@ menuPageTextContainer.append(menuPageSidesTextp2);
 menuPageTextContainer.append(menuPageSidesTextp3);
 menuPageTextContainer.append(menuPageSidesTextp4);
 
-function menuTabSwitch() {
+function menuTabSwitch(e) {
   var divElements = document.querySelectorAll(".divElements");
   for (var i = 0; i < divElements.length; i++) {
     divElements[i].parentNode.removeChild(divElements[i]);
@@ -79,6 +80,7 @@ function menuTabSwitch() {
 
   currentPageImg.src = "../src/img/madie-hamilton-Q9yr-cvJr30-unsplash.jpg";
   contentDiv.append(menuPageTextContainer);
+  e.preventDefault();
 }
 
 export { menuTabSwitch };

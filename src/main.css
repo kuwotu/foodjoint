@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(255, 221, 156, 0.2);
+}
+
+li,
+a {
+  font-family: "Gideon Roman", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+}
+
+p {
+  font-family: "Gideon Roman", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+}
+
+header {
+  display: flex;
+  text-decoration: none;
+  background-color: #ffdd9c;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  height: 100px;
+}
+
+#logoImg:hover {
+  cursor: pointer;
+}
+
+#homePageTextContainer,
+#menuPageTextContainer,
+#barAndTerraceWineAndDrinksContainer,
+#aboutUsLocationsContainer {
+  background-color: rgba(255, 221, 156, 0.2);
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  padding: 5px 0px;
+}
+
+#menuPageTextContainer {
+  width: 55%;
+}
+
+#homePageTextContainer h1,
+#menuPageTextContainer h1,
+#barAndTerracePageTextContainer h1,
+#aboutUsPageTextContainer h1,
+#aboutUsLocationsContainer h1 {
+  font-family: "Gideon Roman", sans-serif;
+  margin: 20px 0px 40px 0px;
+  text-transform: uppercase;
+}
+
+#homePageTextContainer p,
+#menuPageTextContainer p,
+#barAndTerracePageTextContainer p,
+#barAndTerraceWineAndDrinksContainer p,
+#aboutUsPageTextContainer p {
+  margin-bottom: 30px;
+  padding: 0px 80px;
+  font-weight: 500;
+}
+
+#homePageImgContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#barAndTerraceWineAndDrinksContainer {
+  width: 80%;
+}
+#barAndTerracePageTextContainer,
+#aboutUsPageTextContainer {
+  background-color: none;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  padding: 5px 0px;
+}
+
+#barAndTerraceWineAndDrinksTabContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0px;
+}
+
+#wineListContainer0 p,
+#drinksListContainer0 p {
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#drinksListContainer0 p {
+  margin-bottom: 2px;
+}
+
+#drinksListContainer1 p:first-child {
+  margin-bottom: 2px;
+}
+
+#barAndTerraceWineAndDrinksTabContainer :hover {
+  color: rgb(240 115 29);
+  transition: 0.5s;
+}
+
+#aboutUsAddress1Container,
+#aboutUsAddress2Container,
+#aboutUsAddress3Container {
+  margin-bottom: 10px;
+}
+
+#aboutUsAddress1Container p:first-child,
+#aboutUsAddress2Container p:first-child,
+#aboutUsAddress3Container p:first-child {
+  color: rgb(240 115 29);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+#aboutUsLocationsContainer h1 {
+  font-size: 18px;
+}
+
+.addressDays {
+  margin-top: 8px;
+}
+
+#addressContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#addressContainer:first-child,
+#addressContainer:nth-child(2) {
+  justify-content: space-evenly;
+}
