@@ -31,7 +31,7 @@ function createNavbar() {
   aboutUsLink.href = "#";
   aboutUsLink.addEventListener("click", aboutUsTabSwitch);
 
-  logoImg.src = "../src/img/Savory Magazine.png";
+  logoImg.src = "../src/img/savory Magazine.png";
   logoImg.style.width = "100px";
   logoImg.id = "logoImg";
   logoImgContainer.append(logoImg);
