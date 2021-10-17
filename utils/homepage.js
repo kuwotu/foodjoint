@@ -11,7 +11,7 @@ const homePageTextp3 = document.createElement("p");
 
 createNavbar();
 currentPageImg.id = "currentPageImg";
-currentPageImg.src = "../src/img/alex-haney-CAhjZmVk5H4-unsplash.jpg";
+currentPageImg.src = "./src/img/alex-haney-CAhjZmVk5H4-unsplash.jpg";
 currentPageImg.style.width = "537px";
 
 homePageTextH1.textContent = "Welcome to Chef’s Kiss";
