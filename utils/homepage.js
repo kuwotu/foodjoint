@@ -11,7 +11,7 @@ const homePageTextp3 = document.createElement("p");
 
 createNavbar();
 currentPageImg.id = "currentPageImg";
-currentPageImg.src = ".dist/img/friends-eating-food-homepage.jpg";
+currentPageImg.src = "..dist/img/friends-eating-food-homepage.jpg";
 currentPageImg.style.width = "537px";
 
 homePageTextH1.textContent = "Welcome to Chef’s Kiss";
@@ -37,7 +37,7 @@ function homePageTabSwitch(e) {
   for (var i = 0; i < divElements.length; i++) {
     divElements[i].parentNode.removeChild(divElements[i]);
   }
-  currentPageImg.src = ".dist/img/friends-eating-food-homepage.jpg";
+  currentPageImg.src = "..dist/img/friends-eating-food-homepage.jpg";
   contentDiv.append(homePageImgContainer);
   contentDiv.append(homePageTextContainer);
   e.preventDefault();
