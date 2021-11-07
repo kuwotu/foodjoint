@@ -310,7 +310,7 @@ function barAndTerraceTabSwitch(e) {
   for (var i = 0; i < divElements.length; i++) {
     divElements[i].parentNode.removeChild(divElements[i]);
   }
-  currentPageImg.src = "../src/img/matthieu-joannon-6ciLddToTgM-unsplash.jpg";
+  currentPageImg.src = "./img/bar-three-drinks.jpg";
   contentDiv.append(barAndTerracePageTextContainer);
   contentDiv.append(barAndTerraceWineAndDrinksContainer);
   e.preventDefault();

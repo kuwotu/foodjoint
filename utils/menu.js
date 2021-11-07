@@ -78,7 +78,7 @@ function menuTabSwitch(e) {
     divElements[i].parentNode.removeChild(divElements[i]);
   }
 
-  currentPageImg.src = "../src/img/madie-hamilton-Q9yr-cvJr30-unsplash.jpg";
+  currentPageImg.src = "./img/menu-food-on-table.jpg";
   contentDiv.append(menuPageTextContainer);
   e.preventDefault();
 }

@@ -65,7 +65,7 @@ aboutUsAddress1Line3.textContent = "London W1F 9UB";
 aboutUsAddress1Days.classList.add("addressDays");
 aboutUsAddress1Days.textContent = "Monday - Sunday";
 aboutUsAddress1Times.textContent = "11am - 1am";
-aboutUsLocationImage1.src = "../src/img/sohoChefsKiss.jpg";
+aboutUsLocationImage1.src = "./img/sohoChefsKiss.jpg";
 aboutUsLocationImage1.style.width = "314px";
 
 aboutUsAddress2Line1.textContent = "Paddington";
@@ -74,7 +74,7 @@ aboutUsAddress2Line3.textContent = "London W1U 4HD";
 aboutUsAddress2Days.classList.add("addressDays");
 aboutUsAddress2Days.textContent = "Monday - Saturday";
 aboutUsAddress2Times.textContent = "10am - 11pm";
-aboutUsLocationImage2.src = "../src/img/paddingtonChefsKiss.jpg";
+aboutUsLocationImage2.src = "./img/paddingtonChefsKiss.jpg";
 aboutUsLocationImage2.style.width = "314px";
 
 aboutUsAddress3Line1.textContent = "Chiswick";
@@ -83,7 +83,7 @@ aboutUsAddress3Line3.textContent = "London W4 1PR";
 aboutUsAddress3Days.classList.add("addressDays");
 aboutUsAddress3Days.textContent = "Monday - Sunday";
 aboutUsAddress3Times.textContent = "12pm - 1am";
-aboutUsLocationImage3.src = "../src/img/camdenChefsKiss.jpg";
+aboutUsLocationImage3.src = "./img/camdenChefsKiss.jpg";
 aboutUsLocationImage3.style.width = "314px";
 
 aboutUsLocationImage1Container.append(aboutUsLocationImage1);
@@ -134,7 +134,7 @@ function aboutUsTabSwitch(e) {
   for (var i = 0; i < divElements.length; i++) {
     divElements[i].parentNode.removeChild(divElements[i]);
   }
-  currentPageImg.src = "../src/img/max-delsid-0geTqSZ76Xg-unsplash.jpg";
+  currentPageImg.src = "./img/about-us-food-prep.jpg";
   contentDiv.append(aboutUsPageTextContainer);
   contentDiv.append(aboutUsLocationsContainer);
   e.preventDefault();
